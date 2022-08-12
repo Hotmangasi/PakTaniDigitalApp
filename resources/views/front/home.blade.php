@@ -16,11 +16,6 @@
             </h5>
             <p class="card-text">{!! $row->body !!}</p>
         </div>
-        {{-- <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
-        </ul> --}}
         <div class="card-body">
             <a href="#" class="card-link">{{ $row->users->name }}</a>
             <a href="#" class="card-link">{{ $row->kategori->nama_kategori }}</a>
