@@ -1,5 +1,5 @@
 <!-- Sidebar -->
-<div class="sidebar sidebar-style-2">			
+<div class="sidebar sidebar-style-2">
     <div class="sidebar-wrapper scrollbar scrollbar-inner">
         <div class="sidebar-content">
             <div class="user">
@@ -9,7 +9,7 @@
                 <div class="info">
                     <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
                         <span>
-                            Hotmangasi
+                            {{ Auth::user()->name }}
                             <span class="user-level">Administrator</span>
                             <span class="caret"></span>
                         </span>
@@ -64,42 +64,42 @@
                     <a href="{{ route('kategori.index') }}">
                         <i class="fas fa-desktop"></i>
                         <p>Kategori</p>
-                        
+
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('artikel.index') }}">
                         <i class="fas fa-desktop"></i>
                         <p>Artikel</p>
-                        
+
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('playlist.index') }}">
                         <i class="fas fa-video"></i>
                         <p>Playlist Video</p>
-                        
+
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('materi.index') }}">
                         <i class="fas fa-film"></i>
                         <p>Materi Video</p>
-                        
+
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('slide.index') }}">
                         <i class="fas fa-film"></i>
                         <p>Slide Banner</p>
-                        
+
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('iklan.index') }}">
                         <i class="fas fa-film"></i>
                         <p>Iklan Banner</p>
-                        
+
                     </a>
                 </li>
                 <li class="nav-item">
@@ -110,18 +110,18 @@
                     </a> --}}
 
                     <a href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
+                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
 
-                                        <i class="fas fa-undo"></i>
-                                        {{ __('Logout') }}
-                                    </a>
+                        <i class="fas fa-undo"></i>
+                        {{ __('Logout') }}
+                    </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
                 </li>
-                
+
             </ul>
         </div>
     </div>
