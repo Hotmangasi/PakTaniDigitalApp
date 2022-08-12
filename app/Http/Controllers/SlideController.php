@@ -38,7 +38,7 @@ class SlideController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'judul_materi' => 'required|min:4',
+            'judul_slide' => 'required|min:4',
             'gambar_slide' => 'mimes:png,jpg,jpeg,gif,bmp'
         ]);
 

@@ -16,7 +16,7 @@
 			<div class="card full-height">
 				<div class="card-header">
 					<div class="card-head-row">
-						<div class="card-title">Data Slide</div>
+						<div class="card-title">Data Iklan</div>
                         
 					</div>
 				</div>
