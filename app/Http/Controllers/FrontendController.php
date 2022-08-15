@@ -10,7 +10,8 @@ use Illuminate\Http\Request;
 
 class FrontendController extends Controller
 {
-    public function index(){
+    public function index()
+    {
 
         $category = Kategori::all();
         $artikel = Artikel::all();
@@ -22,11 +23,12 @@ class FrontendController extends Controller
         ]);
     }
 
-    public function detail($slug){
+    public function detail($slug)
+    {
         $category = Kategori::all();
-        $artikel = Artikel::where('slug',$slug)->first();
+        $artikel = Artikel::where('slug', $slug)->first();
 
-        $iklanA = Iklan::where('id','1')->first();
+        $iklanA = Iklan::where('id', '1')->first();
 
         $postinganTerbaru = Artikel::orderBy('created_at', 'DESC')->limit(5)->get();
 
@@ -35,7 +37,7 @@ class FrontendController extends Controller
             'category' => $category,
             'iklanA' => $iklanA,
             'postinganTerbaru' => $postinganTerbaru
-            
+
         ]);
     }
 }
