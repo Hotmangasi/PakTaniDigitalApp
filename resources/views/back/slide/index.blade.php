@@ -32,6 +32,7 @@
                             <tr>
                                 <th>ID</th>
                                 <th>Judul Slide</th>
+                                <th>Deskripsi</th>
                                 <th>Link</th>
                                 <th>Status</th>
                                 <th>Gambar</th>
@@ -43,6 +44,7 @@
                             <tr>
                                 <td>{{ $row->id }}</td>
                                 <td>{{ $row->judul_slide }}</td>
+                                <td>{{ $row->deskripsi }}</td>
                                 <td>{{ $row->link }}</td>
                                 <td>
                                     

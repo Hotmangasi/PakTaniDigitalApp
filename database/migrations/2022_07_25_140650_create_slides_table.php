@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('slide', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('judul_slide')->nullable();
+            $table->text('deskripsi')->nullable();
             $table->text('link');
             $table->text('gambar_slide');
             $table->integer('status');

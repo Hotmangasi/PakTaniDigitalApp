@@ -81,17 +81,9 @@
 
                     </a>
                 </li>
+                
                 <li class="nav-item">
-<<<<<<< HEAD
-=======
-                    <a href="{{ route('materi.index') }}">
-                        <i class="fas fa-film"></i>
-                        <p>Materi Video</p>
 
-                    </a>
-                </li>
-                <li class="nav-item">
->>>>>>> bb2384b812e928a8f2c65942bc59fb11fead2701
                     <a href="{{ route('slide.index') }}">
                         <i class="fas fa-film"></i>
                         <p>Slide Banner</p>

@@ -29,6 +29,10 @@
                                 <input type="text" name="judul_slide" class="form-control" placeholder="Masukkan Judul">
                             </div>
                             <div class="form-group">
+                                <label for="judul">Deskripsi</label>
+                                <input type="text" name="deskripsi" class="form-control">
+                            </div>
+                            <div class="form-group">
                                 <label for="link">Link </label>
                                 <input type="text" name="link" class="form-control" placeholder="Masukkan link">
                             </div>
