@@ -14,36 +14,33 @@
                 <div class="card full-height">
                     <div class="card-header">
                         <div class="card-head-row">
-                            <div class="card-title">Form Playlist Video</div>
-                            <a href="{{ route('playlist.index') }}" class="btn btn-warning btn-sm ml-auto"> Back </a>
+                            <div class="card-title">Data Iklan</div>
+                            <a href="{{ route('iklan.index') }}" class="btn btn-warning btn-sm ml-auto"> Back </a>
                         </div>
                     </div>
                     <div class="card-body">
-                        <div class="col-md-6 col-lg-11">
-                            <form action="{{ route('playlist.store') }}" method="post" enctype="multipart/form-data">
+                        <div class="col-md-6 col-lg-4">
+                            <form action="{{ route('iklan.store') }}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 <div class="form-group">
-                                    <label for="judul">Playlist Video</label>
-                                    <input type="text" name="judul_playlist" class="form-control"
-                                        placeholder="Masukkan Judul">
+                                    <label for="judul">Judul Iklan</label>
+                                    <input type="text" name="judul" class="form-control" placeholder="Masukkan Judul">
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="body">Deskripsi</label>
-                                    <textarea name="deskripsi" class="form-control" id="editor1"></textarea>
+                                    <label for="link">Link </label>
+                                    <input type="text" name="link" class="form-control" placeholder="Masukkan link">
                                 </div>
 
-
-
                                 <div class="form-group">
-                                    <label for="gambar">Gambar Playlist</label>
-                                    <input type="file" name="gambar_playlist" class="form-control">
+                                    <label for="gambar">Gambar Iklan</label>
+                                    <input type="file" name="gambar_iklan" class="form-control">
 
                                 </div>
 
                                 <div class="form-group">
                                     <label for="status">Status</label>
-                                    <select name="is_active" class="form-control">
+                                    <select name="status" class="form-control">
                                         <option value="1">Publish</option>
                                         <option value="0">Draft</option>
                                     </select>
@@ -55,11 +52,10 @@
                                     <button class="btn btn-danger btn-sm" type="reset">Reset</button>
                                 </div>
                             </form>
-
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    @endsection
+    </div>
+@endsection
