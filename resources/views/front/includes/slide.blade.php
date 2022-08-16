@@ -6,7 +6,7 @@
                     <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
                         <a href="http://{{ $row->link }}">
                             <img src="{{ asset('uploads/' . $row->gambar_slide) }}" class="d-block"
-                                style="width: 90vh; height: 55vh;" alt="...">
+                                style="width: 125vh; height: 65vh;" alt="...">
                             <div class="banner-content">
                                 <div class="badge badge-danger fs-12 font-weight-bold mb-3">
                                     {{ $row->kategori }}
