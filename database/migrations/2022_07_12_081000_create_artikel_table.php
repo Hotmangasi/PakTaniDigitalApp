@@ -18,12 +18,14 @@ return new class extends Migration
             $table->string('judul');
             $table->text('slug');
             $table->text('body');
-            $table->integer('kategori_id');
-            $table->integer('user_id');
+            $table->unsignedBigInteger('kategori_id');
+            $table->unsignedBigInteger('user_id');
             $table->string('gambar_artikel');
             $table->boolean('is_active');
             $table->integer('views');
             $table->timestamps();
+            $table->foreign('kategori_id')->references('id')->on('kategori')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onUpdate('cascade')->onDelete('cascade');
         });
     }
 

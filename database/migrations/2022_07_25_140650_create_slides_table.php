@@ -6,10 +6,10 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
+    /** 
+     * Run the migrations. 
+     * 
+     * @return void 
      */
     public function up()
     {
@@ -17,6 +17,7 @@ return new class extends Migration
             $table->bigIncrements('id');
             $table->string('judul_slide')->nullable();
             $table->text('deskripsi')->nullable();
+            $table->text('kategori')->nullable();
             $table->text('link');
             $table->text('gambar_slide');
             $table->integer('status');
@@ -24,10 +25,10 @@ return new class extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
+    /** 
+     * Reverse the migrations. 
+     * 
+     * @return void 
      */
     public function down()
     {

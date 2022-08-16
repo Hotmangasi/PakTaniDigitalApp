@@ -60,10 +60,18 @@
                                         <h4>{{ Auth::user()->name }}</h4>
                                         <p class="text-muted">{{ Auth::user()->email }}</p><a href="#"
                                             class="btn btn-xs btn-secondary btn-sm">View Profile</a>
+                                        <a class="ml-2" style="font-size: 14px" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+
+                                            <i class="fas fa-undo"></i>
+                                            {{ __('Logout') }}
+                                        </a>
+
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            {{-- <li>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">My Profile</a>
                                 <a class="dropdown-item" href="#">My Balance</a>
@@ -72,7 +80,7 @@
                                 <a class="dropdown-item" href="#">Account Setting</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Logout</a>
-                            </li>
+                            </li> --}}
                         </div>
                     </ul>
                 </li>

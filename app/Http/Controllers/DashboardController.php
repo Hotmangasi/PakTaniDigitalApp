@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Artikel;
+use App\Models\Kategori;
+use App\Models\Playlist;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -13,7 +17,17 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('back.dashboard'); 
+        $user = User::all();
+        $artikel = Artikel::paginate(10);
+        $kategori = Kategori::all();
+        $video = Playlist::all();
+
+        return view('back.dashboard', [
+            'user' => $user,
+            'artikel' => $artikel,
+            'kategori' => $kategori,
+            'video' => $video
+        ]);
     }
 
     /**
