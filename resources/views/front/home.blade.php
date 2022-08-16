@@ -49,7 +49,7 @@
                                         <h2 class="mb-2 font-weight-600">
                                             {{ $row->judul }}
                                         </h2>
-                                        <p class="mb-0">
+                                        <p class="mb-0 text-justify">
                                             {!! Str::limit($row->body, 150) !!}
                                         </p>
                                     </div>
