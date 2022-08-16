@@ -9,6 +9,7 @@ use App\Http\Controllers\PlaylistController;
 use App\Http\Controllers\SlideController;
 use App\Http\Controllers\IklanController;
 use App\Http\Controllers\FrontendController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------

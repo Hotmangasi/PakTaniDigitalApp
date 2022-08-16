@@ -85,6 +85,7 @@
 
                     </a>
                 </li>
+                
                 <li class="nav-item">
                     <a href="{{ route('slide.index') }}">
                         <i class="fas fa-layer-group"></i>

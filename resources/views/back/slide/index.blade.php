@@ -48,7 +48,6 @@
                                             <td>{{ $row->kategori }}</td>
                                             <td>{{ $row->link }}</td>
                                             <td>
-
                                                 <img src="{{ asset('uploads/' . $row->gambar_slide) }}" alt=""
                                                     width="100">
                                             </td>
@@ -78,11 +77,9 @@
                                             <td colspan="7" class="text-center">Data Masih Kosong</td>
                                         </tr>
                                     @endforelse
-
                                 </tbody>
                             </table>
                         </div>
-
                     </div>
                 </div>
             </div>

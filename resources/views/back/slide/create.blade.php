@@ -4,7 +4,6 @@
     <div class="panel-header bg-primary-gradient">
         <div class="page-inner py-5">
             <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
-
             </div>
         </div>
     </div>
@@ -45,7 +44,6 @@
                                     <input type="file" name="gambar_slide" class="form-control">
 
                                 </div>
-
                                 <div class="form-group">
                                     <label for="status">Status</label>
                                     <select name="status" class="form-control">
@@ -53,8 +51,6 @@
                                         <option value="0">Draft</option>
                                     </select>
                                 </div>
-
-
                                 <div class="form-group">
                                     <button class="btn btn-primary btn-sm" type="submit">Save</button>
                                     <button class="btn btn-danger btn-sm" type="reset">Reset</button>

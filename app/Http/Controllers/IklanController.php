@@ -26,7 +26,7 @@ class IklanController extends Controller
      */
     public function create()
     {
-        //
+        return view('back.iklan.create');
     }
 
     /**
@@ -37,7 +37,23 @@ class IklanController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'judul' => 'required|min:4',
+            'gambar_iklan' => 'mimes:png,jpg,jpeg,gif,bmp'
+        ]);
+
+        if (!empty($request->file('gambar_iklan'))) {
+            $data = $request->all();
+            $data['gambar_iklan'] = $request->file('gambar_iklan')->store('slide');
+
+            Iklan::create($data);
+            return redirect()->route('iklan.index')->with('succes', 'Data Berhasil Disimpan');
+        } else {
+            $data = $request->all();
+
+            Iklan::create($data);
+            return redirect()->route('iklan.index')->with('succes', 'Data Berhasil Disimpan');
+        }
     }
 
     /**
