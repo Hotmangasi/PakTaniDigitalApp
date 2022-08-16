@@ -11,12 +11,12 @@
                         <span>
                             {{ Auth::user()->name }}
                             <span class="user-level">Administrator</span>
-                            <span class="caret"></span>
+                            {{-- <span class="caret"></span> --}}
                         </span>
                     </a>
                     <div class="clearfix"></div>
 
-                    <div class="collapse in" id="collapseExample">
+                    {{-- <div class="collapse in" id="collapseExample">
                         <ul class="nav">
                             <li>
                                 <a href="#profile">
@@ -34,17 +34,21 @@
                                 </a>
                             </li>
                         </ul>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
             <ul class="nav nav-primary">
                 <li class="nav-item active">
-                    <a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
+                    <a href="{{ route('dashboard') }}" class="collapsed" aria-expanded="false">
+                        <i class="fas fa-home"></i>
+                        <p>Dashboard</p>
+                    </a>
+                    {{-- <a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
                         <i class="fas fa-home"></i>
                         <p>Dashboard</p>
                         <span class="caret"></span>
-                    </a>
-                    <div class="collapse" id="dashboard">
+                    </a> --}}
+                    {{-- <div class="collapse" id="dashboard">
                         <ul class="nav nav-collapse">
                             <li>
                                 <a href="{{ asset('back/demo1/index.html') }}">
@@ -52,7 +56,7 @@
                                 </a>
                             </li>
                         </ul>
-                    </div>
+                    </div> --}}
                 </li>
                 <li class="nav-section">
                     <span class="sidebar-mini-icon">
@@ -62,14 +66,14 @@
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('kategori.index') }}">
-                        <i class="fas fa-desktop"></i>
+                        <i class="fas fa-th-list"></i>
                         <p>Kategori</p>
 
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('artikel.index') }}">
-                        <i class="fas fa-desktop"></i>
+                        <i class="fas fa-pen-square"></i>
                         <p>Artikel</p>
 
                     </a>
@@ -82,22 +86,15 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ route('materi.index') }}">
-                        <i class="fas fa-film"></i>
-                        <p>Materi Video</p>
-
-                    </a>
-                </li>
-                <li class="nav-item">
                     <a href="{{ route('slide.index') }}">
-                        <i class="fas fa-film"></i>
+                        <i class="fas fa-layer-group"></i>
                         <p>Slide Banner</p>
 
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('iklan.index') }}">
-                        <i class="fas fa-film"></i>
+                        <i class="fas fa-desktop"></i>
                         <p>Iklan Banner</p>
 
                     </a>
