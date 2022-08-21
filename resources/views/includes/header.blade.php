@@ -2,11 +2,11 @@
     <!-- Logo Header -->
     <div class="logo-header" data-background-color="blue">
 
-        <a href="index.html" class="logo">
-            {{-- <img src="{{ asset('back/img/logo.svg') }}" alt="navbar brand" class="navbar-brand"> --}}
+        <a href="{{ route('beranda') }}" class="logo">
+            <img src="{{ asset('back/img/Logo PTD-01.png') }}" alt="navbar brand" width="50" class="navbar-brand">
         </a>
-        <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse"
-            aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse"
+            data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
                 <i class="icon-menu"></i>
             </span>
