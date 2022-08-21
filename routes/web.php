@@ -9,7 +9,7 @@ use App\Http\Controllers\PlaylistController;
 use App\Http\Controllers\SlideController;
 use App\Http\Controllers\IklanController;
 use App\Http\Controllers\FrontendController;
-
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,3 +38,4 @@ Route::resource('artikel', ArtikelController::class);
 Route::resource('playlist', PlaylistController::class);
 Route::resource('slide', SlideController::class);
 Route::resource('iklan', IklanController::class);
+Route::resource('user', UserController::class);

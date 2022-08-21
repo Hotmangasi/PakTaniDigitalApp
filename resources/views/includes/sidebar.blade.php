@@ -3,11 +3,13 @@
     <div class="sidebar-wrapper scrollbar scrollbar-inner">
         <div class="sidebar-content">
             <div class="user">
-                <div class="avatar-sm float-left mr-2">
-                    {{-- <img src="{{ asset('back/img/profile.jpg') }}" alt="..." class="avatar-img rounded-circle"> --}}
+                <div class="avatar-sm float-left mr-2 mb-3">
+                    <img src="{{ asset('uploads/' . Auth::user()->foto) }}" width="100" alt="..."
+                        class="avatar-img rounded-circle">
                 </div>
                 <div class="info">
-                    <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+                    {{-- data-toggle="collapse" --}}
+                    <a href="{{ route('user.index') }}" aria-expanded="true">
                         <span>
                             {{ Auth::user()->name }}
                             <span class="user-level">Administrator</span>
@@ -85,7 +87,7 @@
 
                     </a>
                 </li>
-                
+
                 <li class="nav-item">
                     <a href="{{ route('slide.index') }}">
                         <i class="fas fa-layer-group"></i>

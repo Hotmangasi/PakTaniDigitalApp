@@ -46,7 +46,7 @@
                 <li class="nav-item dropdown hidden-caret">
                     <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
                         <div class="avatar-sm">
-                            <img src="{{ asset('back/img/Logo PTD-01.png') }}" alt="..."
+                            <img src="{{ asset('uploads/' . Auth::user()->foto) }}" alt="..."
                                 class="avatar-img rounded-circle">
                         </div>
                     </a>
@@ -54,11 +54,14 @@
                         <div class="dropdown-user-scroll scrollbar-outer">
                             <li>
                                 <div class="user-box">
-                                    <div class="avatar-lg"><img src="{{ asset('back/img/profile7.jpg') }}"
-                                            alt="image profile" class="avatar-img rounded"></div>
+                                    <div class="avatar-lg">
+                                        <img src="{{ asset('uploads/' . Auth::user()->foto) }}" width="100"
+                                            alt="image profile" class="avatar-img rounded">
+                                    </div>
                                     <div class="u-text">
                                         <h4>{{ Auth::user()->name }}</h4>
-                                        <p class="text-muted">{{ Auth::user()->email }}</p><a href="#"
+                                        <p class="text-muted">{{ Auth::user()->email }}</p><a
+                                            href="{{ route('user.index') }}"
                                             class="btn btn-xs btn-secondary btn-sm">View Profile</a>
                                         <a class="ml-2" style="font-size: 14px" href="{{ route('logout') }}"
                                             onclick="event.preventDefault();

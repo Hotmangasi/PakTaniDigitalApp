@@ -32,7 +32,9 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="">Tentang</a>
+                                    <a class="nav-link"
+                                        href="https://play.google.com/store/apps/details?id=com.hagatekno.ptd">Download
+                                        App</a>
                                 </li>
                             </ul>
                         </div>
