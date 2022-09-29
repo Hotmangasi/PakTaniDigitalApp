@@ -70,7 +70,7 @@
                                             <h4>{{ $iklan->judul }}</h4>
                                             <hr>
                                             <a href="{{ $iklan->link }}">
-                                                <img src="{{ asset('uploads/' . $iklan->gambar_iklan) }}" width="350">
+                                                <img src="{{ asset('uploads/' . $iklan->gambar_iklan) }}" width="10px">
                                             </a>
                                         </div>
                                     </div>

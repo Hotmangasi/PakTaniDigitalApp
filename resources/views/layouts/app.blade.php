@@ -10,6 +10,7 @@
 
     <title>{{ config('app.name', 'Pak Tani Digital') }}</title>
 
+    <link rel="stylesheet" href="{{ asset('back/css/bootstrap.min.css') }}">
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">

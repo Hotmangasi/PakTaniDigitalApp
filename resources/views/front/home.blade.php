@@ -34,6 +34,7 @@
                         @foreach ($artikel as $row)
                             {{-- @continue($row->id == $row->count() || $row->id == $row->count() - 1 || $row->id == $row->count() - 2) --}}
                             <div class="col-md-4 card">
+                                <a href="{{ route('detail-artikel', $row->slug) }}" class="text-dark">
                                 <div class="card-body px-0">
                                     <div class="position-relative">
                                         <div class="rotate-img">
@@ -54,6 +55,7 @@
                                         </p>
                                     </div>
                                 </div>
+                                </a>
                             </div>
                         @endforeach
 
